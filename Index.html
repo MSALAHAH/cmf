@@ -1,1 +1,382 @@
+<!DOCTYPE html>
+<!-- بِسْم اللَّه الرَّحْمن الرَّحِيم -->
+<!-- وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا -->
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
+    <title>CMF - Non-Pay</title>
+</head>
+<body>
+    <body id="docToolSectionBody">
+    
+            <h2 id="headSubject">CMF <br><span class="headSpan">Call Monitoring Form</span></h2>
+    
+            <div class="alert" id="warning-alert">
+                <h3>Important Notice</h3>
+                <p>once you click "New Evaluation",<br>The page will reload, no data will be retained.</p>
+            </div>
+    
+            <div id="styleBox">
+    
+                <div class="UserInput">
+                    <textarea id="userInput" oninput="updateTextarea()" placeholder="User Custom Input..."></textarea>
+                    <div id="userInputButtons">
+                        <button id="updateButton" onclick="updateSentenceWithUserInput()">Push Input</button>
+                        <button id="clearButton" onclick="clearUserInput()">Clear Input</button>
+                    </div>
+                </div>
+    
+                <hr> <!-- ================= 1st Main Box ================ -->
+    
+                <div id="checkboxesDiv">
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox00" class="custom-checkbox" title="">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox00"
+                                onchange="togglemainCheckbox00Options()"> 
+                                Call Opening
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox00Options" style="display: none;">
+                        <label for="mainCheckbox00-1" class="custom-checkbox" title="">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox00-1" value="">
+                            <span class="checkmark"></span>
+                            NULL
+                        </label>
+                    </div>
+    
+                    <hr> <!-- ================= 2nd Main Box ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox01" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox01"
+                                onchange="togglemainCheckbox01Options()"> Reason of the past due
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox1Options" style="display: none;">
+                        <label for="mainCheckbox01-1" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox01-1" value="">
+                            <span class="checkmark"></span>
+                            NULL
+                        </label>
+                    </div>
+    
+                    <hr> <!-- ================= 3rd Main Box ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox02" class="custom-checkbox" title="">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox02"
+                                onchange="togglemainCheckbox02Options()"> Account discovery
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="sub-options" id="mainCheckbox02Options" style="display: none;">
+                        <!-- ================= 1st Sub Main ================ -->
+                        <label for="subMainCheckbox00" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" value="" id="subMainCheckbox00"
+                                onchange="togglesubMainCheckbox00Options()"> NULL+
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="sub-options" id="subMainCheckbox00Options" style="display: none;">
+                            <label for="subMainCheckbox00-0" class="custom-checkbox" title="#noTitleMentioned_404">
+                                <input type="checkbox" name="checkbox" id="subMainCheckbox00-0"
+                                    value="">
+                                NULL
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+    
+                        <hr><!-- ================= 2nd Sub Main ================ -->
+    
+                        <label for="subMainCheckbox01" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" value="" id="subMainCheckbox01"
+                                onchange="togglesubMainCheckbox01Options()"> NULL+
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="sub-options" id="subMainCheckbox01Options" style="display: none;">
+                            <label for="subMainCheckbox01-0" class="custom-checkbox"
+                                title="">
+                                <input type="checkbox" name="checkbox" id="subMainCheckbox01-0"
+                                    value=""> NULL
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+    
+                        <hr id="Divider"> <!-- ================= 3rd Sub Main ================ -->
+    
+                        <label for="subMainCheckbox02" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" value="" id="subMainCheckbox02"
+                                onchange="togglesubMainCheckbox02Options()"> NULL+
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="sub-options" id="subMainCheckbox02Options" style="display: none;">
+                            <label for="subMainCheckbox02-0" class="custom-checkbox"
+                                title="">
+                                <input type="checkbox" name="checkbox" id="subMainCheckbox02-0"
+                                value=""> NULL
+                                <span class="checkmark"></span>>
+                            </label>
+                        </div>
+    
+                        <hr id="Divider"> <!-- ================= 4th Sub Main ================ -->
+    
+                        <label for="subMainCheckbox03" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" value="" id="subMainCheckbox03"
+                                onchange="togglesubMainCheckbox03Options()"> NULL+
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="sub-options" id="subMainCheckbox03Options" style="display: none;">
+                            <label for="subMainCheckbox03-1" class="custom-checkbox"
+                                title="">
+                                <input type="checkbox" name="checkbox" id="subMainCheckbox03-1"
+                                    value=""> NULL
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+    
+                        <hr id="Divider"> <!-- ================= 5th Sub Main ================ -->
+    
+                        <label for="subMainCheckbox04" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" value="" id="subMainCheckbox04"
+                                onchange="togglesubMainCheckbox04Options()"> NULL+
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="sub-options" id="subMainCheckbox04Options" style="display: none;">
+                            <label for="subMainCheckbox04-1" class="custom-checkbox"
+                                title="">
+                                <input type="checkbox" name="checkbox" id="subMainCheckbox04-1"
+                                    value=""> NULL
+                                <span class="checkmark"></span>
+                            </label>
+                    </div>
+    
+                    <hr> <!-- ================= 4th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox03" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox03"
+                                onchange="togglemainCheckbox03Options()"> 
+                                Discuss value
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox03Options" style="display: none;">
+                        <h5 class="subHeader">NULL+</h5>
+                        <label for="mainCheckbox03-1" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox03-1"
+                                value="" id="credit10"> NULL
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+    
+                    <hr> <!-- ================= 5th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="subMainCheckbox04 class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox04"
+                                onchange="togglemainCheckbox04Options()"> Attempt to collect
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox04Options" style="display: none;">
+                        <label for="mainCheckbox04-1" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox04-1"
+                                value=""> NULL
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+    
+                    <hr> <!-- ================= 6th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox05" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox05"
+                                onchange="togglemainCheckbox05Options()"> Auto pay
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox05Options" style="display: none;">
+                        <label for="mainCheckbox05-1" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox05-1"
+                                value="">
+                            NULL
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+    
+                    <hr> <!-- ================= 7th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox06" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox06"
+                                onchange="togglemainCheckbox06Options()"> Due date
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox06Options" style="display: none;">
+                        <h5 class="subHeader">NULL</h5>
+                        <label for="mainCheckbox06-1" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox06-1"
+                                value="">
+                            NULL
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+    
+                    <hr> <!-- ================= 8th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox07" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox07"
+                                onchange="togglemainCheckbox07Options()"> Self help
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox07Options" style="display: none;">
+                        <h5 class="subHeader">NULL</h5>
+                        <label for="mainCheckbox07-1" class="custom-checkbox"
+                            title="">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox07-1"
+                                value=""> NULL
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                    </div>
+    
+                    <hr> <!-- ================= 9th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox08" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox08"
+                                onchange="togglemainCheckbox08Options()"> 
+                                ACP
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox08Options" style="display: none;">
+                        <label for="mainCheckbox08-1" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox08-1"
+                                value=""> NULL
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <hr> <!-- ================= 10th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox09" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox09"
+                                onchange="togglemainCheckbox09Options()"> Empathy & Rapport
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox09Options" style="display: none;">
+                        <label for="mainCheckbox7-1" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox09-1"
+                                value=""> NULL
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <hr> <!-- ================= 11th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox10" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox10"
+                                onchange="togglemainCheckbox10Options()"> 
+                                Recap 
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox10Options" style="display: none;">
+                        <label for="mainCheckbox10-1" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox10-1"
+                                value=""> NULL
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <hr> <!-- ================= 12th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox11" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox11"
+                                onchange="togglemainCheckbox11Options()"> 
+                                tool usage
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox11Options" style="display: none;">
+                        <label for="mainCheckbox11-1" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox11-1"
+                                value=""> NULL
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <hr> <!-- ================= 13th Main ================ -->
+    
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox12" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox12"
+                                onchange="togglemainCheckbox12Options()"> Documentation
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox12Options" style="display: none;">
+                        <label for="mainCheckbox12-1" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox12-1"
+                                value=""> NULL
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+    
+            <br>
+    
+            <div>
+                <button id="newCallBtn" onclick="reloadPage()">New Evaluation</button>
+                <button id="copyBtn" onclick="copyToClipboard()">Copy Evaluation</button>
+            </div>
+    
+            <br>
+            <div id="alertMessage">Your Evaluation Note successfully Copied.</div>
+            <br>
+            <textarea id="sentence" rows="12" cols="50" readonly></textarea>
+    
+            <br>
+    
+            <div class="footer">
+                <p>&copy;Coded By <a id="spanBold" href="https://msalahah.github.io/R4/" target="_blank">Mohammed Melok</a> |
+                    All Rights Reserved</p>
+                <div id="iframeContainer"></div>
+            </div>
+        
+    
+        <!--=============== MAIN JS ===============-->
+        <script src=""></script>
+        <script src=""></script>
+        <script src=""></script>
+    </body>
+    
+    </html>
