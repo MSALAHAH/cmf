@@ -4,8 +4,9 @@
 var sentenceParts = [];
 
 function updateSentence() {
-    document.getElementById('sentence').value = sentenceParts.join(' ').trim();
+    document.getElementById('sentence').value = sentenceParts.join('\n').trim();
 }
+
 
 // =============Head Title Href JS=============
 
@@ -113,9 +114,10 @@ function copyToClipboard() {
 
 function alertFunction() {
     var x = document.getElementById("alertMessage");
-    x.className = "show";
+    x.style.display = "block";  // Set to "block" to make it visible
+
     setTimeout(function () {
-        x.className = x.className.replace("show", "");
+        x.style.display = "none";  // Set to "none" to hide it after 3 seconds
     }, 3000);
 }
 
@@ -221,7 +223,7 @@ function togglemainCheckbox07Options() {
     var mainCheckbox07Checkbox = document.getElementById('mainCheckbox07');
     var mainCheckbox07Options = document.getElementById('mainCheckbox07Options');
 
-    if (mainCheckbox7Checkbox.checked) {
+    if (mainCheckbox07Checkbox.checked) {
         mainCheckbox07Options.style.display = 'block';
     } else {
         mainCheckbox07Options.style.display = 'none';
@@ -295,7 +297,7 @@ function togglemainCheckbox12Options() {
 }
 
 // MAIN BOX 13 FUNCTION
-function togglemainCheckbox013ptions() {
+function togglemainCheckbox13Options() {
     var mainCheckbox13Checkbox = document.getElementById('mainCheckbox13');
     var mainCheckbox13Options = document.getElementById('mainCheckbox13Options');
 
@@ -303,6 +305,32 @@ function togglemainCheckbox013ptions() {
         mainCheckbox13Options.style.display = 'block';
     } else {
         mainCheckbox13Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// MAIN BOX 14 FUNCTION
+function togglemainCheckbox14Options() {
+    var mainCheckbox14Checkbox = document.getElementById('mainCheckbox14');
+    var mainCheckbox14Options = document.getElementById('mainCheckbox14Options');
+
+    if (mainCheckbox14Checkbox.checked) {
+        mainCheckbox14Options.style.display = 'block';
+    } else {
+        mainCheckbox14Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// MAIN BOX 15 FUNCTION
+function togglemainCheckbox15Options() {
+    var mainCheckbox15Checkbox = document.getElementById('mainCheckbox15');
+    var mainCheckbox15Options = document.getElementById('mainCheckbox15Options');
+
+    if (mainCheckbox15Checkbox.checked) {
+        mainCheckbox15Options.style.display = 'block';
+    } else {
+        mainCheckbox15Options.style.display = 'none';
     }
     updateSentence();
 }
@@ -419,27 +447,175 @@ function togglesubMainCheckbox07Options() {
 
 
 
-
-
 window.onload = function () {
+
+
+    // GROUP01-togglesubMainCheckbox00Options()
+    var togglesubMainCheckbox00Options1 = document.getElementById('subMainCheckbox00-0');
+    var togglesubMainCheckbox00Options2 = document.getElementById('subMainCheckbox00-1');
+    var togglesubMainCheckbox00Options3 = document.getElementById('subMainCheckbox00-2');
     var checkboxes = document.getElementsByName('checkbox');
+
+    togglesubMainCheckbox00Options1.addEventListener('change', function () {
+        if (togglesubMainCheckbox00Options1.checked) {
+            togglesubMainCheckbox00Options2.checked = false;
+            togglesubMainCheckbox00Options3.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    togglesubMainCheckbox00Options2.addEventListener('change', function () {
+        if (togglesubMainCheckbox00Options2.checked) {
+            togglesubMainCheckbox00Options1.checked = false;
+            togglesubMainCheckbox00Options3.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    togglesubMainCheckbox00Options3.addEventListener('change', function () {
+        if (togglesubMainCheckbox00Options3.checked) {
+            togglesubMainCheckbox00Options1.checked = false;
+            togglesubMainCheckbox00Options2.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+
+    // GROUP02-togglesubMainCheckbox01Options()
+    var togglesubMainCheckbox01Options1 = document.getElementById('subMainCheckbox01-0');
+    var togglesubMainCheckbox01Options2 = document.getElementById('subMainCheckbox01-1');
+    var togglesubMainCheckbox01Options3 = document.getElementById('subMainCheckbox01-2');
+    var checkboxes = document.getElementsByName('checkbox');
+
+    togglesubMainCheckbox01Options1.addEventListener('change', function () {
+        if (togglesubMainCheckbox01Options1.checked) {
+            togglesubMainCheckbox01Options2.checked = false;
+            togglesubMainCheckbox01Options3.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    togglesubMainCheckbox01Options2.addEventListener('change', function () {
+        if (togglesubMainCheckbox01Options2.checked) {
+            togglesubMainCheckbox01Options1.checked = false;
+            togglesubMainCheckbox01Options3.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    togglesubMainCheckbox01Options3.addEventListener('change', function () {
+        if (togglesubMainCheckbox01Options3.checked) {
+            togglesubMainCheckbox01Options1.checked = false;
+            togglesubMainCheckbox01Options2.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    // GROUP03-togglesubMainCheckbox02Options()
+    var togglesubMainCheckbox02Options1 = document.getElementById('subMainCheckbox02-0');
+    var togglesubMainCheckbox02Options2 = document.getElementById('subMainCheckbox02-1');
+    var togglesubMainCheckbox02Options3 = document.getElementById('subMainCheckbox02-2');
+    var checkboxes = document.getElementsByName('checkbox');
+
+    togglesubMainCheckbox02Options1.addEventListener('change', function () {
+        if (togglesubMainCheckbox02Options1.checked) {
+            togglesubMainCheckbox02Options2.checked = false;
+            togglesubMainCheckbox02Options3.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    togglesubMainCheckbox02Options2.addEventListener('change', function () {
+        if (togglesubMainCheckbox02Options2.checked) {
+            togglesubMainCheckbox02Options1.checked = false;
+            togglesubMainCheckbox02Options3.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    togglesubMainCheckbox02Options3.addEventListener('change', function () {
+        if (togglesubMainCheckbox02Options3.checked) {
+            togglesubMainCheckbox02Options1.checked = false;
+            togglesubMainCheckbox02Options2.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    // GROUP04-togglemainCheckbox02Options()
+    var togglemainCheckbox02Options1 = document.getElementById('mainCheckbox02-1');
+    var togglemainCheckbox02Options2 = document.getElementById('mainCheckbox02-2');
+    var togglemainCheckbox02Options3 = document.getElementById('mainCheckbox02-3');
+    var checkboxes = document.getElementsByName('checkbox');
+
+    togglemainCheckbox02Options1.addEventListener('change', function () {
+        if (togglemainCheckbox02Options1.checked) {
+            togglemainCheckbox02Options2.checked = false;
+            togglemainCheckbox02Options3.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    togglemainCheckbox02Options2.addEventListener('change', function () {
+        if (togglemainCheckbox02Options2.checked) {
+            togglemainCheckbox02Options1.checked = false;
+            togglemainCheckbox02Options3.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
+    togglemainCheckbox02Options3.addEventListener('change', function () {
+        if (togglemainCheckbox02Options3.checked) {
+            togglemainCheckbox02Options1.checked = false;
+            togglemainCheckbox02Options2.checked = false;
+        }
+        handleCheckboxChange();
+    });
+
     for (var i = 0; i < checkboxes.length; i++) {
         checkboxes[i].addEventListener('change', handleCheckboxChange);
     }
 }
 
 
-function handleCheckboxChange(event) {
-    var checkbox = event.target;
-    if (checkbox.checked) {
-        if (sentenceParts.indexOf(checkbox.value) === -1) {
+// TO HANDLE THE REGULAR BOXES
+function handleCheckboxChange() {
+    var checkboxes = document.getElementsByName('checkbox');
+    sentenceParts = [];
+
+    for (var i = 0; i < checkboxes.length; i++) {
+        var checkbox = checkboxes[i];
+        if (checkbox.checked) {
             sentenceParts.push(checkbox.value);
         }
-    } else {
-        var index = sentenceParts.indexOf(checkbox.value);
-        if (index !== -1) {
-            sentenceParts.splice(index, 1);
-        }
     }
+
     updateSentence();
 }
+
+
+
+
+
+
+// window.onload = function () {
+//     var checkboxes = document.getElementsByName('checkbox');
+//     for (var i = 0; i < checkboxes.length; i++) {
+//         checkboxes[i].addEventListener('change', handleCheckboxChange);
+//     }
+// }
+
+
+// function handleCheckboxChange(event) {
+//     var checkbox = event.target;
+//     if (checkbox.checked) {
+//         if (sentenceParts.indexOf(checkbox.value) === -1) {
+//             sentenceParts.push(checkbox.value);
+//         }
+//     } else {
+//         var index = sentenceParts.indexOf(checkbox.value);
+//         if (index !== -1) {
+//             sentenceParts.splice(index, 1);
+//         }
+//     }
+//     updateSentence();
+// }

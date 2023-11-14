@@ -7,22 +7,17 @@
             }
 
             body {
-                background: url(./dottedBg.svg);
-                background-size: cover;
+                background: url('https://raw.githubusercontent.com/MSALAHAH/cmf/41a7603b6ed38be7174b0d31b6a47a08c5be911e/bgSpot.svg');
                 background-repeat: no-repeat;
+                background-size: cover;
                 background-position: center center;
+                background-color: #c8e1ff;
                 margin: 0;
                 font-family: "Regular", sans-serif;
                 font-weight: 500;
                 font-size: 1rem;
                 transition: .5s;
-            }
-
-            #bg {
-                background: url('./dottedBg.svg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
+                scroll-behavior: smooth;
             }
 
             @font-face {
@@ -80,15 +75,25 @@
             #headSubject {
                 cursor: pointer;
                 text-align: left;
-                padding: 15px 0px 5px 30px;
+                padding: 10px 0px 5px 5px;
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 22px;
                 width: 100%;
-                margin-top: 0px;
-                background-color: rgba(253, 249, 249, 0);
-                color: #fff;
-                text-shadow: 0px 0px 5px #000;
+                color: #000;
+                text-shadow: 0px 1px 4px #696969;
+            }
+
+            #headSubjectImg {
+                display: flex;
+                width: 100%;
+                height: 75px;
+                align-items: center;
+            }
+
+            #headSubjectImg img {
+                width: 65px;
+                height: 60px;
             }
 
             .headSpan {
@@ -96,12 +101,11 @@
             }
 
             #Divider {
-                width: 230px;
+                width: 90%;
             }
 
             #alertMessage {
                 width: 80%;
-                visibility: hidden;
                 min-width: 250px;
                 margin: auto;
                 background-color: rgb(4, 105, 34, 1);
@@ -173,8 +177,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                width: 36%;
+                min-width: 370px;
                 padding: 3% 3% 2% 3%;
-                margin: 2% 2% 0% 2%;
+                margin: 0.5% 2% 2% 2%;
                 box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
                 background: #ffffff5c;
                 border-radius: 6px;
@@ -205,7 +211,7 @@
                 color: #000;
                 background-color: #fff;
                 border: none;
-                border-radius: 6px;
+                border-radius: 8px;
                 box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.42);
                 cursor: pointer;
                 transition: all 0.1s linear;
@@ -232,15 +238,16 @@
                 text-align: left;
                 text-transform: capitalize;
                 line-height: 28px;
-                padding: 0px 0px 5% 0px;
+                padding: 5% 0px 5% 0px;
             }
 
 
             #styleBox {
-                width: 480px;
+                width: 36%;
+                min-width: 355px;
                 border-radius: 8px;
                 box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
-                background: #ffffff5c;
+                background: #ffffff00;
             }
 
             .selectionStyle {
@@ -267,35 +274,62 @@
             }
 
             #mainCheckbox00Options,
-            #mainCheckbox1Options,
-            #mainCheckbox2Options,
-            #mainCheckbox3Options,
-            #mainCheckbox4Options,
-            #mainCheckbox5Options,
-            #mainCheckbox6Options,
-            #mainCheckbox7Options,
-            #mainCheckbox8Options,
-            #subMainCheckbox0Options,
-            #subMainCheckbox1Options,
-            #subMainCheckbox2Options,
-            #subMainCheckbox3Options,
-            #subMainCheckbox4Options,
-            #subMainCheckbox5Options {
+            #mainCheckbox01Options,
+            #mainCheckbox02Options,
+            #mainCheckbox03Options,
+            #mainCheckbox04Options,
+            #mainCheckbox05Options,
+            #mainCheckbox06Options,
+            #mainCheckbox07Options,
+            #mainCheckbox08Options,
+            #mainCheckbox09Options,
+            #mainCheckbox10Options,
+            #mainCheckbox11Options,
+            #mainCheckbox12Options,
+            #mainCheckbox13Options,
+            #mainCheckbox14Options,
+            #mainCheckbox15Options,
+            #mainCheckbox16Options,
+            #mainCheckbox17Options,
+            #mainCheckbox18Options,
+            #mainCheckbox19Options,
+            #mainCheckbox20Options,
+            #subMainCheckbox00Options,
+            #subMainCheckbox01Options,
+            #subMainCheckbox02Options,
+            #subMainCheckbox03Options,
+            #subMainCheckbox04Options,
+            #subMainCheckbox05Options,
+            #subMainCheckbox06Options,
+            #subMainCheckbox07Options,
+            #subMainCheckbox08Options,
+            #subMainCheckbox09Options,
+            #subMainCheckbox010Options,
+            #subMainCheckbox11Options,
+            #subMainCheckbox12Options,
+            #subMainCheckbox13Options,
+            #subMainCheckbox14Options,
+            #subMainCheckbox15Options,
+            #subMainCheckbox16Options,
+            #subMainCheckbox17Options,
+            #subMainCheckbox18Options,
+            #subMainCheckbox19Options,
+            #subMainCheckbox20Options {
                 margin-left: 22px;
             }
 
             #newCallBtn,
             #copyBtn {
-                padding: 0.7em 2em;
+                padding: 10px 17px;
                 font-family: 'Roboto Slab';
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 color: #000;
                 background-color: #fff;
                 border: none;
-                border-radius: 10px;
+                border-radius: 8px;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.42);
                 transition: all 0.1s ease 0s;
                 cursor: pointer;
@@ -399,42 +433,14 @@
             }
 
             #spanBold {
-                color: #14b3b3;
+                color: #fa8e2c;
                 font-weight: 700;
             }
 
-            @media (max-width: 320px) {
-                body {
-                    padding-left: 0px;
-                }
-
-                #styleBox {
-                    width: 250px;
-                }
-
-                #checkboxesDiv {
-                    font-size: 14px;
-                    padding: 0px 0px 5% 0px;
-                }
-
-                #newCallBtn,
-                #copyBtn {
-                    font-size: 12px;
-                }
-            }
-
             @media (max-width: 425px) {
-                body {
-                    padding-left: 0px;
-                }
-
-                #styleBox {
-                    width: 320px;
-                }
 
                 #checkboxesDiv {
                     font-size: 16px;
-                    padding: 0px 0px 5% 0px;
                 }
 
                 #newCallBtn,
@@ -444,13 +450,6 @@
             }
 
             @media (max-width: 768px) {
-                body {
-                    padding-left: 0px;
-                }
-
-                #styleBox {
-                    width: 420px;
-                }
 
                 #updateButton, #clearButton {
                     font-size: 11px;
@@ -458,7 +457,6 @@
 
                 #checkboxesDiv {
                     font-size: 14px;
-                    padding: 0px 0px 5% 0px;
                 }
 
                 #newCallBtn,
@@ -468,18 +466,12 @@
             }
 
             @media (min-width: 1440px) {
-
-                #styleBox {
-                    width: 480px;
-                }
-
                 .selectionStyle {
                     margin: 0% 0% 2% 0%;
                 }
 
                 #checkboxesDiv {
                     font-size: 20px;
-                    padding: 0px 0px 5% 0px;
                 }
 
                 #newCallBtn,
